@@ -3240,7 +3240,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.MinecraftUWP" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MoCamera" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.OfficeLens" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
@@ -3249,7 +3249,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Reader" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Todos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Wallet" | Remove-AppxPackage
@@ -3304,7 +3304,7 @@ Function InstallMsftBloat {
 	Get-AppxPackage -AllUsers "Microsoft.MinecraftUWP" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.MixedReality.Portal" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.MoCamera" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-	Get-AppxPackage -AllUsers "Microsoft.MSPaint" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	# Get-AppxPackage -AllUsers "Microsoft.MSPaint" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.NetworkSpeedTest" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.OfficeLens" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Office.OneNote" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
@@ -3313,7 +3313,7 @@ Function InstallMsftBloat {
 	Get-AppxPackage -AllUsers "Microsoft.People" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Print3D" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Reader" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-	Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	# Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.SkypeApp" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Todos" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Wallet" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
