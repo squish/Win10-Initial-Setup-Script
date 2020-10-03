@@ -68,6 +68,7 @@ DisableUWPBackgroundApps        # EnableUWPBackgroundApps
 # EnableDotNetStrongCrypt       # DisableDotNetStrongCrypto
 # EnableMeltdownCompatFlag      # DisableMeltdownCompatFlag
 # EnableF8BootMenu              # DisableF8BootMenu
+EnableQuietBoot                 # DisableQuietBoot
 # DisableBootRecovery           # EnableBootRecovery
 # DisableRecoveryAndReset       # EnableRecoveryAndReset
 # SetDEPOptOut                  # SetDEPOptIn
